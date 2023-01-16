@@ -1,0 +1,53 @@
+.profile-container {
+  display: flex;
+  margin: 6rem 1rem;
+  column-gap: 4rem;
+}
+
+.profile-container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 60vw;
+  margin-top: 6rem;
+}
+.profile-text {
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.profile-container-svg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 30vw;
+}
+.profile-izq {
+  fill: rgb(0, 0, 0);
+}
+
+@keyframes grow {
+  0% {
+    fill: rgb(0, 0, 0);
+  }
+  50% {
+    fill: rgba(255, 234, 1, 0.84);
+  }
+  100% {
+    fill: rgb(0, 0, 0);
+  }
+}
+
+.profile-izq:hover {
+  animation-name: grow;
+  animation-duration: 3s;
+}
+
+.profile-svg-js {
+  display: none;
+  position: absolute;
+  right: -20rem;
+  opacity: 0;
+}
