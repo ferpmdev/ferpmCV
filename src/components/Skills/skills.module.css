@@ -1,62 +1,33 @@
 .skills-container {
   display: flex;
-  flex-direction: column;
-  margin: 6rem 1rem;
+  flex-direction: row;
+  margin: 6rem 1rem 0;
   column-gap: 4rem;
 }
 
 .skills-container-svg {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex: 1 1 80%;
+  align-items: flex-start;
+  flex: 1 1 20%;
+  margin: 1rem;
 }
 
 .skills-container-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   flex: 1 1 80%;
-  margin-top: 6rem;
 }
 
-@keyframes grow {
-  0% {
-    fill: rgb(0, 0, 0);
+@media screen and (min-width: 980px) {
+  .skills-container {
+    margin: 20rem 1rem 0;
   }
-  50% {
-    fill: rgba(255, 144, 18, 0.311);
+  .skills-container-svg {
+    flex: 1 1 50%;
+    align-items: center;
   }
-  100% {
-    fill: rgb(0, 0, 0);
+  .skills-container-text {
+    flex: 1 1 50%;
   }
 }
-
-/* .skills-izq {
-  fill: rgb(0, 0, 0);
-}
-
-.skills-izq:hover {
-  animation-name: grow;
-  animation-duration: 1s;
-}
-
-.skills-svg-js-cls-1 {
-  fill: #fd0;
-}
-
-.skills-svg-ccs-cls-2 {
-  fill: rgb(226, 221, 221);
-}
-
-.skills-svg-ccs-cls-1 {
-  fill: blue;
-}
-
-.skills-svg-js,
-.skills-svg-css {
-  min-width: 1rem;
-  min-height: 1rem;
-  flex: 1 1 auto;
-  margin: 1rem;
-} */
