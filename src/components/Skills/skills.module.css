@@ -1,30 +1,23 @@
 .skills-container {
   display: flex;
+  flex-direction: column;
   margin: 6rem 1rem;
   column-gap: 4rem;
-}
-
-.skills-container-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1 1 60vw;
-  margin-top: 6rem;
-}
-.skills-text {
-  font-size: 2.2rem;
-  font-weight: 300;
-  line-height: 1.4;
 }
 
 .skills-container-svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 1 30vw;
+  flex: 1 1 80%;
 }
-.skills-izq {
-  fill: rgb(0, 0, 0);
+
+.skills-container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 80%;
+  margin-top: 6rem;
 }
 
 @keyframes grow {
@@ -39,6 +32,10 @@
   }
 }
 
+/* .skills-izq {
+  fill: rgb(0, 0, 0);
+}
+
 .skills-izq:hover {
   animation-name: grow;
   animation-duration: 1s;
@@ -50,7 +47,6 @@
 
 .skills-svg-ccs-cls-2 {
   fill: rgb(226, 221, 221);
-  z-index: 10;
 }
 
 .skills-svg-ccs-cls-1 {
@@ -63,4 +59,4 @@
   min-height: 1rem;
   flex: 1 1 auto;
   margin: 1rem;
-}
+} */

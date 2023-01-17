@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import "./Cursor.css";
-import { motion } from "framer-motion";
+import { useEffect, useState } from 'react';
+import './Cursor.css';
+import { motion } from 'framer-motion';
 
 export interface Props {
   scaling?: boolean;
@@ -13,10 +13,10 @@ const Cursor = ({ scaling }: Props) => {
     const mousemove = (e: any) => {
       setsmallcircle({ x: e.clientX, y: e.clientY });
     };
-    window.addEventListener("mousemove", mousemove);
+    window.addEventListener('mousemove', mousemove);
 
     return () => {
-      window.removeEventListener("mousemove", mousemove);
+      window.removeEventListener('mousemove', mousemove);
     };
   }, []);
 
@@ -24,9 +24,9 @@ const Cursor = ({ scaling }: Props) => {
     <div>
       <motion.div
         animate={{
-          x: smallcircle.x - 40,
-          y: smallcircle.y - 10,
-          transition: { type: "spring", mass: 1 },
+          x: smallcircle.x - 10,
+          y: smallcircle.y - 20,
+          transition: { type: 'spring', mass: 1 },
         }}
         className="small_circle"
       ></motion.div>

@@ -1,0 +1,34 @@
+.skillsLogos-container {
+  max-width: 70%;
+}
+.skillsLogos-container-glass {
+  fill: rgb(0, 0, 0);
+}
+
+.skillsLogos-container:hover {
+  animation-name: grow;
+  animation-duration: 1s;
+}
+
+.skillsLogos-container-glass:hover {
+  animation-name: grow;
+  animation-duration: 3s;
+}
+
+@keyframes grow {
+  0% {
+    fill: rgb(0, 0, 0);
+  }
+  50% {
+    fill: rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    fill: rgb(0, 0, 0);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .skillsLogos-container {
+    max-width: 70%;
+  }
+}

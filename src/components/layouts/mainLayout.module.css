@@ -1,6 +1,6 @@
 .container {
   padding: 0;
-  margin: 0;
+  margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,18 +8,16 @@
 }
 
 .main {
-  margin: 0;
-  padding: 0;
+  width: 100%;
 }
 
-@media (max-width: 320px) {
-  .container {
-    margin: 1;
-  }
-}
-
-@media (min-width: 1024px) {
+@media screen and (min-width: 980px) {
   .container {
     padding: 1.5rem 4rem 0 4rem;
+  }
+
+  .main {
+    margin: 0;
+    padding: 0;
   }
 }

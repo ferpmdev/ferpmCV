@@ -1,16 +1,20 @@
 :root {
-  font-family: "Big Shoulders Inline Text", cursive;
-  font-size: 62.5%;
-  line-height: 24px;
-  font-weight: 400;
-
   cursor: none;
-
+  font-family: 'Big Shoulders Inline Text', cursive;
+  font-size: 62.5%;
+  font-weight: 400;
   font-synthesis: none;
+  line-height: 24px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /***** COLORS ******/
+  --primary: #343434;
+  /* --secundary: # */
+  --orange: #f06418;
+  --background: #e3f6f9;
 }
 
 body {
@@ -18,15 +22,36 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 280px;
   min-height: 100vh;
-  background-color: #e3e3e3;
+  background-color: var(--background);
 }
 
 h1 {
-  color: rgb(52, 52, 52);
-  font-size: 10rem;
-  font-weight: 500;
+  font-size: calc(3.5rem + 3vw);
   line-height: 0.9;
+  font-weight: 900;
+  color: var(--primary);
   margin: 0;
+}
+
+p {
+  font-size: calc(1.1rem + 2vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: calc(5.5rem + 5vw);
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h1 {
+    font-size: calc(3.5rem + 4vw);
+  }
+  p {
+    font-size: calc(1.1rem + 1vw);
+  }
 }
