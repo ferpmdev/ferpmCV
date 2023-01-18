@@ -1,10 +1,10 @@
-.profile-container {
+.experience-container {
   display: flex;
   flex-direction: column-reverse;
   margin: 6rem 0 0 0;
   row-gap: 1rem;
 }
-.profile-container-text {
+.experience-container-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,11 +12,11 @@
   margin: 1rem;
 }
 
-.profile-h1 {
+.experience-h1 {
   margin-top: 1rem;
 }
 
-.profile-container-svg {
+.experience-container-svg {
   position: relative;
   display: flex;
   justify-content: center;
@@ -24,31 +24,31 @@
   flex: 0 0 80%;
 }
 
-.profile-container-skillsLogos {
+.experience-container-skillsLogos {
   display: none;
 }
 
-.profile-container-svg-animation {
+.experience-container-svg-animation {
   display: none;
 }
 
 @media screen and (min-width: 980px) {
-  .profile-container {
+  .experience-container {
     display: flex;
     flex-direction: row;
     margin: 10rem 0 0 4rem;
     row-gap: 1rem;
   }
 
-  .profile-container-svg,
-  .profile-container-text {
+  .experience-container-svg,
+  .experience-container-text {
     flex: 1 1 50%;
   }
 
-  .profile-container-text {
+  .experience-container-text {
     margin-top: 3rem;
   }
-  .profile-container-skillsLogos {
+  .experience-container-skillsLogos {
     display: inherit;
     position: absolute;
     top: -10rem;
@@ -56,7 +56,7 @@
     animation: skillsLogo-1 1 5s linear;
   }
 
-  .profile-container-svg-animation {
+  .experience-container-svg-animation {
     display: inherit;
     position: absolute;
     width: 10rem;

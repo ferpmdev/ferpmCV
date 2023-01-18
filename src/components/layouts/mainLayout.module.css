@@ -1,22 +1,23 @@
-.container {
+.layout-container {
   padding: 0;
-  margin: 1rem;
+  margin: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 55rem;
 }
 
-.main {
+.layout-main {
   width: 100%;
 }
 
 @media screen and (min-width: 980px) {
-  .container {
+  .layout-container {
     padding: 1.5rem 4rem 0 4rem;
   }
 
-  .main {
+  .layout-main {
+    display: flex;
     margin: 0;
     padding: 0;
   }

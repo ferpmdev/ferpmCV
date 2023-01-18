@@ -5,13 +5,6 @@ const SkillsLogos = () => {
     <section className={styles['skillsLogos-container']}>
       <div className={styles['skillsLogos-container-item']}>
         <img
-          src="./tailwind.svg"
-          alt="logo de tailwind css"
-          className={styles['skillsLogos-svg-ccs-cls-1']}
-        />
-      </div>
-      <div className={styles['skillsLogos-container-item']}>
-        <img
           src="./html.svg"
           alt="logo de tailwind css"
           className={styles['skillsLogos-svg-ccs-cls-1']}
@@ -33,6 +26,27 @@ const SkillsLogos = () => {
       </div>
       <div className={styles['skillsLogos-container-item']}>
         <img
+          src="./react.svg"
+          alt="logo de tailwind css"
+          className={styles['skillsLogos-svg-ccs-cls-1']}
+        />
+      </div>
+      <div className={styles['skillsLogos-container-item']}>
+        <img
+          src="./reactNative.svg"
+          alt="logo de tailwind css"
+          className={styles['skillsLogos-svg-ccs-cls-1']}
+        />
+      </div>
+      <div className={styles['skillsLogos-container-item']}>
+        <img
+          src="./nextjs.svg"
+          alt="logo de tailwind css"
+          className={styles['skillsLogos-svg-ccs-cls-1']}
+        />
+      </div>
+      <div className={styles['skillsLogos-container-item']}>
+        <img
           src="./git.svg"
           alt="logo de tailwind css"
           className={styles['skillsLogos-svg-ccs-cls-1']}
@@ -40,7 +54,7 @@ const SkillsLogos = () => {
       </div>
       <div className={styles['skillsLogos-container-item']}>
         <img
-          src="./react.svg"
+          src="./tailwind.svg"
           alt="logo de tailwind css"
           className={styles['skillsLogos-svg-ccs-cls-1']}
         />
