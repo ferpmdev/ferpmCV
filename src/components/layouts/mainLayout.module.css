@@ -1,6 +1,6 @@
 .layout-container {
   padding: 0;
-  margin: 1rem 0;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 980px) {
   .layout-container {
-    padding: 1.5rem 4rem 0 4rem;
+    padding: 0 4rem;
   }
 
   .layout-main {

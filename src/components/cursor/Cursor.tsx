@@ -25,7 +25,7 @@ const Cursor = ({ scaling }: Props) => {
       <motion.div
         animate={{
           x: smallcircle.x - 10,
-          y: smallcircle.y - 20,
+          y: smallcircle.y - 10,
           transition: { type: 'spring', mass: 1 },
         }}
         className="small_circle"

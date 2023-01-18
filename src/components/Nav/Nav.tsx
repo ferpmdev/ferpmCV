@@ -9,7 +9,7 @@ const Nav = () => {
       <a href="#skills" className={styles['nav-link']}>
         <p className={styles['nav-link-text']}>Skills</p>
       </a>
-      <a href="#works" className={styles['nav-link']}>
+      <a href="#experience" className={styles['nav-link']}>
         <p className={styles['nav-link-text']}>Experience</p>
       </a>
       <a href="#contact" className={styles['nav-link']}>

@@ -1,7 +1,7 @@
 import './App.css';
 import Contact from './components/contact/Contact';
 import Cursor from './components/cursor/Cursor';
-import Works from './components/projects/Experience';
+import Experience from './components/experience/Experience';
 import Nav from './components/nav/Nav';
 import Profile from './components/profile/Profile';
 import Skills from './components/skills/Skills';
@@ -16,7 +16,7 @@ function App() {
         <Nav />
         <Profile />
         <Skills />
-        <Works />
+        <Experience />
         <Contact />
       </main>
     </div>

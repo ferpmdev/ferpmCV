@@ -1,16 +1,16 @@
-.skillsLogos-container {
-  max-width: 70%;
+.autoret-container {
+  max-width: 40%;
 }
-.skillsLogos-container-glass {
+.autoret-container-glass {
   fill: rgb(0, 0, 0);
 }
 
-.skillsLogos-container:hover {
+.autoret-container:hover {
   animation-name: grow;
   animation-duration: 1s;
 }
 
-.skillsLogos-container-glass:hover {
+.autoret-container-glass:hover {
   animation-name: grow;
   animation-duration: 3s;
 }
@@ -27,8 +27,8 @@
   }
 }
 
-@media screen and (min-width: 480px) {
-  .skillsLogos-container {
+@media screen and (min-width: 980px) {
+  .autoret-container {
     max-width: 70%;
   }
 }
