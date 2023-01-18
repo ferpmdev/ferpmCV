@@ -1,4 +1,4 @@
-import { MainLayout } from '../layouts/MainLayout';
+import { MainLayout } from '../../layouts/MainLayout';
 import SkillsLogos from '../skills/skillsLogos/SkillsLogos';
 import styles from './experience.module.css';
 

@@ -1,8 +1,8 @@
-import { MainLayout } from "../layouts/MainLayout";
+import { MainLayout } from '../../layouts/MainLayout';
 
 const Contact = () => {
   return (
-    <MainLayout idSection={"contact"}>
+    <MainLayout idSection={'contact'}>
       <h1>Contact</h1>
       <p>
         Frontend Developer with 2+ years of experience developing and testing

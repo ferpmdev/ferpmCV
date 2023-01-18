@@ -1,4 +1,4 @@
-import { MainLayout } from '../layouts/MainLayout';
+import { MainLayout } from '../../layouts/MainLayout';
 import styles from './profile.module.css';
 import SkillsLogos from '../skills/skillsLogos/SkillsLogos';
 import { AutoretWhole } from './autoretWhole/AutoretWhole';

@@ -1,10 +1,10 @@
 import './App.css';
-import Contact from './components/contact/Contact';
-import Cursor from './components/cursor/Cursor';
-import Experience from './components/experience/Experience';
-import Nav from './components/nav/Nav';
-import Profile from './components/profile/Profile';
-import Skills from './components/skills/Skills';
+import Contact from './components/sections/contact/Contact';
+import Cursor from './components/ui/cursor/Cursor';
+import Experience from './components/sections/experience/Experience';
+import Nav from './components/ui/nav/Nav';
+import Profile from './components/sections/profile/Profile';
+import Skills from './components/sections/skills/Skills';
 import { useState } from 'react';
 
 function App() {
