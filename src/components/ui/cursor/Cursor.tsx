@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Cursor.css';
 import { motion } from 'framer-motion';
-
-export interface Props {
-  scaling?: boolean;
-}
+import { Props } from '../../interfaces/interfaces';
 
 const Cursor = ({ scaling }: Props) => {
   const [smallcircle, setsmallcircle] = useState({ x: 0, y: 0 });

@@ -51,11 +51,17 @@
   color: var(--black);
 }
 
+.experience-hr {
+  opacity: 0.3;
+  width: 100%;
+  margin: 2rem 0;
+}
+
 @media screen and (min-width: 980px) {
   .experience-container {
     display: flex;
     flex-direction: row;
-    margin: 10rem 1rem 0 1rem;
+    margin: 3rem 1rem 0 1rem;
     row-gap: 1rem;
   }
 

@@ -1,16 +1,34 @@
 import { MainLayout } from '../../layouts/MainLayout';
 
+import styles from './contact.module.css';
+
 const Contact = () => {
   return (
     <MainLayout idSection={'contact'}>
-      <h1>Contact</h1>
-      <p>
-        Frontend Developer with 2+ years of experience developing and testing
-        multiple web-based applications, incorporating a range of technologies
-        like React, React-Native, Next, JavaScript, CSS3. I am looking for new
-        challenges to grow professionally as a Frontend Developer with React,
-        React-Native, Next.js and other frameworks.
-      </p>
+      <div className={styles['container-contact']}>
+        <div className={styles['image-project']}>
+          <img src="/email.png" alt="wjwbfc" />
+        </div>
+        <a
+          href={'https://github.com/ferpmdev'}
+          className={styles['image-project']}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="/github.png" alt="wjwbfc" />
+        </a>
+        <a
+          href={'https://www.linkedin.com/in/ferpmdeveloper/'}
+          className={styles['image-project']}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="/linkedin.png" alt="wjwbfc" />
+        </a>
+        <div className={styles['image-project']}>
+          <img src="/ws.png" alt="wjwbfc" />
+        </div>
+      </div>
     </MainLayout>
   );
 };

@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import Contact from './components/sections/contact/Contact';
 import Cursor from './components/ui/cursor/Cursor';
 import Experience from './components/sections/experience/Experience';
@@ -15,8 +15,11 @@ function App() {
       <main>
         <Nav />
         <Profile />
+        <hr className="hr" />
         <Skills />
+        <hr className="hr" />
         <Experience />
+        <hr className="hr" />
         <Contact />
       </main>
     </div>
