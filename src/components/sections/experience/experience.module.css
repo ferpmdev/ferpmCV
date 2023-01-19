@@ -9,27 +9,46 @@
   flex-direction: column;
   justify-content: center;
   flex: 0 0 80%;
-  margin: 1rem;
+  margin: 0 3rem;
 }
 
-.experience-h1 {
-  margin-top: 1rem;
-}
-
-.experience-container-svg {
+.experience-container-img {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 0 0 80%;
+  margin-top: 2rem;
 }
 
-.experience-container-skillsLogos {
+.experience-container-img-all {
   display: none;
 }
 
-.experience-container-svg-animation {
-  display: none;
+.experience-img {
+  width: 85%;
+  filter: drop-shadow(0 0.5rem 3rem rgb(148, 152, 159));
+}
+
+.experience-container-h3 {
+  color: var(--black);
+  font-size: calc(1.2rem + 1vw);
+  margin: 0 0 2rem 0;
+  font-weight: 500;
+}
+
+.experience-a {
+  font-size: calc(1.1rem + 1vw);
+  font-weight: 300;
+  text-decoration: underline;
+  margin: 2rem 0 1rem;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.experience-a:hover {
+  font-size: calc(1.2rem + 1.2vw);
+  color: var(--black);
 }
 
 @media screen and (min-width: 980px) {
@@ -40,108 +59,28 @@
     row-gap: 1rem;
   }
 
-  .experience-container-svg,
+  .experience-container-img-all,
   .experience-container-text {
     flex: 1 1 50%;
+    justify-content: flex-start;
   }
 
   .experience-container-text {
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
-  .experience-container-skillsLogos {
+
+  .experience-container-img-all {
     display: inherit;
-    position: absolute;
-    top: -10rem;
-    left: 150rem;
-    animation: skillsLogo-1 1 5s linear;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
-
-  .experience-container-svg-animation {
-    display: inherit;
-    position: absolute;
-    width: 10rem;
-    height: 10rem;
-    left: 100rem;
-    top: -10rem;
-    -webkit-animation-name: bounceInDown;
-    animation-name: bounceInDown;
-    -webkit-animation-duration: 2s;
-    animation-duration: 3s;
-    animation-delay: 6s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  .experience-container-img {
+    display: none;
   }
-
-  @-webkit-keyframes bounceInDown {
-    0%,
-    20%,
-    75%,
-    100% {
-      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-
-    0% {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-
-    20% {
-      opacity: 0.5;
-      -webkit-transform: translate3d(-50rem, 25px, -80rem);
-      transform: translate3d(-80rem, 40rem, -120rem);
-    }
-
-    75% {
-      opacity: 1;
-      transform: matrix(0.86, 1.9, 1.79, 0.69, -23, -1);
-      -ms-transform: matrix(0.86, 1.9, 1.79, 0.69, -23, -1);
-      -webkit-transform: matrix(0.86, 1.9, 1.79, 0.69, -23, -1);
-      /* transform: scale(50); */
-    }
-
-    100% {
-      opacity: 0;
-      -webkit-transform: translate3d(-50rem, 25px, -80rem);
-      transform: translate3d(-180rem, 180rem, -18rem);
-    }
-  }
-
-  @keyframes bounceInDown {
-    0%,
-    20%,
-    75%,
-    100% {
-      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      transition-timing-function: cubic-bezier(0.215, 0.61, 0.55, 1);
-      /* transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); */
-    }
-
-    0% {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-
-    20% {
-      opacity: 0.5;
-      -webkit-transform: translate3d(-50rem, 25px, -80rem);
-      transform: translate3d(-80rem, 40rem, -120rem);
-    }
-
-    55% {
-      opacity: 1;
-      transform: matrix(0.86, 1.9, 1.79, 0.69, -23, -1);
-      -ms-transform: matrix(0.86, 1.9, 1.79, 0.69, -23, -1);
-      -webkit-transform: matrix(0.86, 1.9, 1.79, 0.69, -23, -1);
-      /* transform: scale(50); */
-    }
-
-    100% {
-      opacity: 0;
-      -webkit-transform: translate3d(-50rem, 25px, -80rem);
-      transform: translate3d(-180rem, 180rem, -18rem);
-    }
+  .experience-img-all {
+    width: 70%;
+    filter: drop-shadow(0 0.5rem 3rem rgb(148, 152, 159));
   }
 }

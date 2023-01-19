@@ -15,6 +15,7 @@
   /* --secundary: # */
   --orange: #f06418;
   --background: #e3f6f9;
+  --black: #000000;
 }
 
 body {
@@ -35,10 +36,31 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  color: var(--black);
+  font-size: calc(1.5rem + 1vw);
+  margin: 2rem 0;
+  line-height: 1.1;
+}
+
+h3 {
+  color: var(--orange);
+  font-size: calc(1.2rem + 1vw);
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
 p {
   font-size: calc(1.1rem + 2vw);
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.4;
+  margin: 1rem;
+}
+
+hr {
+  border-top: 1px solid var(--primary);
+  width: 100%;
+  margin: 2rem 0;
 }
 
 @media screen and (min-width: 480px) {
