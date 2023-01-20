@@ -23,7 +23,7 @@ export const dataItems = [
   {
     time: "ELLE's deploy: December 2021",
     text: 'Magazine of fashion, beauty, celebrity and culture:',
-    url: 'http://www.elle.clarin.com',
+    url: 'http://www.elle.com.ar',
     srcItem: './elle.webp',
     id: 4,
   },
