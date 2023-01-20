@@ -25,7 +25,8 @@ Se trata de un challenge para postular a una propuesta laboral de la empresa Sil
 
 > **Alcanzar una buena performance.**  
 > a - Las animaciones no se ejecutan en dispositivos mobiles y tablets.  
-> b - Utilicé **svg** siempre que pude. - Para las imágenes no vectoriales utilicé el formato **webp**.
+> b - Siempre que fué posible utilicé **svg**. Al principio pensé en usar una foto mía para la seccion Profile, pero luego, en base a unas imágenes que busqué, dibujé en Ilustrator un autorretrato y lo exporté como svg. Lo mismo hice con cada una de los logos de las skills.  
+> c - Para las imágenes no vectoriales utilicé el formato **webp**.
 
 > **Generar componentes reutilizables.**  
 > a - Desarrollé el componente Button con props requeridas y opcionales para reutilizarlo en toda la landing, implementando su adaptabilidad en distintos tipos de uso.
@@ -41,4 +42,4 @@ Se trata de un challenge para postular a una propuesta laboral de la empresa Sil
 
 ## **Última aclaración**.
 
-En principio me queda pendiente mejorar las animaciones y darle la funcionalidad a dos botones de la sección contact (visualmente footer): email y whatsapp .
+En principio me queda pendiente mejorar las animaciones y darle la funcionalidad a dos botones de la sección contact (visualmente footer): email y whatsapp, y pasar a svg las imagenes de esta sección.
