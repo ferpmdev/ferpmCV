@@ -10,10 +10,11 @@ export interface PropsAutoret {
 }
 
 export interface PropsButton {
-  href: string | undefined;
+  href: string;
   target?: string | undefined;
   classNameA: string | undefined;
-  classNameP: string | undefined;
-  text: string;
+  classNameP?: string | undefined;
+  text?: string;
   download?: string | undefined;
+  children?: React.ReactNode;
 }

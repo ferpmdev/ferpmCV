@@ -13,7 +13,7 @@
 }
 .nav-link-text {
   margin: 1.5rem 0rem;
-  font-size: 1.5rem;
+  font-size: calc(1.3rem + 0.5vw);
   color: var(--background);
   font-weight: 500;
 }
@@ -35,16 +35,10 @@
 }
 @media (min-width: 360px) {
   .nav-link-text {
-    margin: 1.5rem 1rem;
-    font-size: calc(1.3rem + 0.5vw);
+    font-size: calc(1.6rem + 0.8vw);
   }
 }
 
-@media (min-width: 480px) {
-  .nav-link-text {
-    font-size: calc(1.5rem + 1vw);
-  }
-}
 @media (min-width: 980px) {
   .nav-link-text {
     font-size: calc(1.8rem + 0.5vw);

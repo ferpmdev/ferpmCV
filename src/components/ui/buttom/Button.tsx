@@ -7,10 +7,12 @@ const Button = ({
   text,
   target = '',
   download = undefined,
+  children,
 }: PropsButton) => {
   return (
     <a href={href} className={classNameA} target={target} download={download}>
       <p className={classNameP}>{text}</p>
+      {children}
     </a>
   );
 };

@@ -2,7 +2,7 @@ export const dataItems = [
   {
     time: 'Clarín development: currently',
     text: 'On the most important news site in Argentina, working with commitment, facing the next presidential elections.',
-    url: 'https://www.clarin.com.ar/',
+    url: 'http://www.clarin.com.ar/',
     srcItem: './clarin.webp',
     id: 1,
   },
