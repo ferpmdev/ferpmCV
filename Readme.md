@@ -5,7 +5,7 @@ Se trata de un challenge para postular a una propuesta laboral de la empresa Sil
 **Requisitos:**
 
 - React.js.
-- Utilizar componentes, props de ser necesario, estilos con la libreria deseada.
+- Utilizar componentes, props de ser necesario, estilos con la librería deseada.
 - Typescript (plus).
 
 ---
@@ -24,19 +24,19 @@ Se trata de un challenge para postular a una propuesta laboral de la empresa Sil
 > Trabaje el CSS con el concepto Mobile First.
 
 > **Alcanzar una buena performance.**  
-> a - Las animaciones no se ejecutan en dispositivos mobiles y tablets.  
-> b - Siempre que fué posible utilicé **svg**. Al principio pensé en usar una foto mía para la seccion Profile, pero luego, en base a unas imágenes que busqué, dibujé en Ilustrator un autorretrato y lo exporté como svg. Lo mismo hice con cada una de los logos de las skills.  
+> a - Las animaciones no se ejecutan en dispositivos móbiles y tablets.  
+> b - Siempre que fue posible utilicé **svg**. Al principio pensé en usar una foto mía para la sección Profile, pero luego, basándome en unas imágenes que busqué, dibujé en Ilustrator un autorretrato y lo exporté como svg. Lo mismo hice con cada uno de los logos de las skills.  
 > c - Para las imágenes no vectoriales utilicé el formato **webp**.
 
 > **Generar componentes reutilizables.**  
 > a - Desarrollé el componente Button con props requeridas y opcionales para reutilizarlo en toda la landing, implementando su adaptabilidad en distintos tipos de uso.
 
 > **Utilizar la menor cantidad de librerías posibles.**  
-> a - En un momento pensé en usar MateriaUI pero luego desistí y me fui a una estrategia de "puro CSS" porque privilegié el mantenimiento del proyecto a largo plazo. Siempre una dependencia es una dependencia.
+> a - En un momento pensé en usar MateriaUI, pero luego desistí y me fui a una estrategia de "puro CSS" porque privilegié el mantenimiento del proyecto a largo plazo. Siempre una dependencia es una dependencia.
 
 > **Alcanzar una visualidad empática con buena UX.**  
-> a - Me decidí por un nav que permita dirigirse al usuario a la sección deseada así como también poder hacer scroll libremente por las distintas secciones, dispuestas a lo largo de una única pantalla.
-> Por esto elegí una font condensada que me permita mantener este navBar, aún en dispositivos de 280px de ancho(Galaxy Fold), y evitar un menu de tipo hamburguesa que agregaría una interacción mas y su consiguiente incomodidad.
+> a - Me decidí por un navBar que permita dirigirse al usuario a la sección deseada, así como también poder hacer scroll libremente por las distintas secciones, dispuestas a lo largo de una única pantalla.
+> Por esto elegí una font condensada que me permita mantener este navBar, aún en dispositivos de 280px de ancho(Galaxy Fold), y evitar un menú de tipo hamburguesa que agregaría una interacción más y su consiguiente incomodidad.
 
 ---
 
