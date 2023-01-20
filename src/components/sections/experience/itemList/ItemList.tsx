@@ -10,9 +10,6 @@ const ItemList = ({ timeItem, textItem, urlItem, srcItem }: PropsItemList) => {
       </div>
       <h3>{timeItem}</h3>
       <p>{textItem}</p>
-      <a href={urlItem} className={styles['experience-a']}>
-        {urlItem}
-      </a>
     </>
   );
 };

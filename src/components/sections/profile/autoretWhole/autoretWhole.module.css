@@ -5,30 +5,47 @@
   fill: rgb(0, 0, 0);
 }
 
-.autoret-container:hover {
-  animation-name: grow;
-  animation-duration: 1s;
-}
-
-.autoret-container-glass:hover {
-  animation-name: grow;
-  animation-duration: 3s;
-}
-
-@keyframes grow {
-  0% {
-    fill: rgb(0, 0, 0);
-  }
-  50% {
-    fill: rgba(0, 0, 0, 0.1);
-  }
-  100% {
-    fill: rgb(0, 0, 0);
-  }
-}
-
 @media screen and (min-width: 980px) {
   .autoret-container {
     max-width: 70%;
+  }
+  .autoret-container-glass {
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+  }
+
+  .autoret-container-glass:hover {
+    animation-name: grow2;
+    animation-duration: 3s;
+  }
+
+  .autoret-container:hover {
+    animation-name: grow;
+    animation-duration: 1s;
+  }
+
+  @keyframes grow {
+    0% {
+      fill: rgb(0, 0, 0);
+    }
+    50% {
+      fill: rgba(0, 0, 0, 0.1);
+    }
+    100% {
+      fill: rgb(0, 0, 0);
+    }
+  }
+
+  @keyframes grow2 {
+    0% {
+      fill: rgb(0, 0, 0);
+    }
+    50% {
+      fill: rgba(0, 0, 0, 0.1);
+    }
+    100% {
+      fill: rgb(0, 0, 0);
+    }
   }
 }

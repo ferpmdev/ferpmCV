@@ -2,6 +2,7 @@ import { MainLayout } from '../../layouts/MainLayout';
 import { dataItems } from '../../fakeData/dataItems';
 import ItemList from './itemList/ItemList';
 import styles from './experience.module.css';
+import Button from '../../ui/buttom/Button';
 
 const Experience = () => {
   return (
@@ -25,13 +26,22 @@ const Experience = () => {
           </p>
           {dataItems &&
             dataItems.map((e) => (
-              <ItemList
-                timeItem={e.time}
-                textItem={e.text}
-                urlItem={e.url}
-                srcItem={e.srcItem}
-                key={e.id}
-              />
+              <>
+                <ItemList
+                  timeItem={e.time}
+                  textItem={e.text}
+                  urlItem={e.url}
+                  srcItem={e.srcItem}
+                  key={e.id}
+                />
+                <Button
+                  href={e.url}
+                  classNameA={styles['experience-a']}
+                  classNameP={styles['experience-p']}
+                  text={e.url}
+                  target={'_blank'}
+                />
+              </>
             ))}
           <hr />
           <p>

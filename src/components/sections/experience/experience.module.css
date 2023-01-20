@@ -38,17 +38,21 @@
 }
 
 .experience-a {
-  font-size: calc(1.1rem + 1vw);
-  font-weight: 300;
   text-decoration: underline;
   margin: 2rem 0 1rem;
-  cursor: pointer;
+  cursor: none;
   color: var(--primary);
 }
 
-.experience-a:hover {
-  font-size: calc(1.2rem + 1.2vw);
+.experience-p {
+  font-size: calc(1.8rem + 1.2vw);
+  font-weight: 300;
+}
+
+.experience-p:hover {
+  font-size: calc(3rem + 1.2vw);
   color: var(--black);
+  transition: 1s;
 }
 
 .experience-hr {
@@ -73,6 +77,17 @@
 
   .experience-container-text {
     margin-top: 6rem;
+  }
+
+  .experience-p {
+    font-size: calc(1.1rem + 1.1vw);
+    font-weight: 300;
+  }
+
+  .experience-p:hover {
+    font-size: calc(2rem + 1.4vw);
+    color: var(--black);
+    transition: 1s;
   }
 
   .experience-container-img-all {

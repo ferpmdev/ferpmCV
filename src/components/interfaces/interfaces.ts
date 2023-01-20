@@ -5,6 +5,15 @@ export interface PropsItemList {
   srcItem: string;
 }
 
-export interface Props {
-  scaling?: boolean;
+export interface PropsAutoret {
+  onMouseEnter?: React.MouseEventHandler<SVGSVGElement> | undefined;
+}
+
+export interface PropsButton {
+  href: string | undefined;
+  target?: string | undefined;
+  classNameA: string | undefined;
+  classNameP: string | undefined;
+  text: string;
+  download?: string | undefined;
 }

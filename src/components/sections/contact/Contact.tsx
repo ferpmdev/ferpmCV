@@ -7,7 +7,7 @@ const Contact = () => {
     <MainLayout idSection={'contact'}>
       <div className={styles['container-contact']}>
         <div className={styles['image-project']}>
-          <img src="/email.png" alt="wjwbfc" />
+          <img src="/email.png" alt="email" />
         </div>
         <a
           href={'https://github.com/ferpmdev'}
