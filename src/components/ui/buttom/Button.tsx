@@ -6,7 +6,7 @@ const Button = ({
   classNameP,
   text,
   target = '',
-  download = undefined,
+  download,
   children,
 }: PropsButton) => {
   return (
