@@ -12,9 +12,13 @@ export interface PropsAlertEmail {
   copyEmail: React.MouseEventHandler<HTMLDivElement> | undefined;
 }
 
-// export interface PropsAutoret {
-//   onMouseEnter?: React.MouseEventHandler<SVGSVGElement> | undefined;
-// }
+export interface PropsReactWhatsapp {
+  number: string;
+  message: string;
+  onClick?: React.MouseEventHandler | undefined;
+  props?: any;
+  className?: string;
+}
 
 export interface PropsButton {
   href?: string;

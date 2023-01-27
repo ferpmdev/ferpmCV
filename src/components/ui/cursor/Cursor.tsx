@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Cursor.css';
 import { motion } from 'framer-motion';
+import * as React from 'react';
 
 const Cursor = () => {
   const [smallcircle, setsmallcircle] = useState({ x: 0, y: 0 });

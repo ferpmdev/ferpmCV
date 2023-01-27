@@ -40,7 +40,7 @@
 .experience-a {
   text-decoration: underline;
   margin: 2rem 0 1rem;
-  cursor: none;
+  /* cursor: none; */
   color: var(--primary);
 }
 

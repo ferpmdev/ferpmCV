@@ -5,6 +5,7 @@ import { MessageHasCopied } from '../../ui/alertEmail/MessageHasCopied';
 import Button from '../../ui/buttom/Button';
 
 import styles from './contact.module.css';
+import ReactWhatsapp from './reactWhatsapp/ReactWhatsapp';
 
 const Contact = () => {
   const [iscopied, setIscopied] = useState(false);
@@ -69,10 +70,10 @@ const Contact = () => {
         >
           <img src="/linkedin.png" alt="linkedin" />
         </Button>
-
-        <div className={styles['contact-button']}>
-          <img src="/ws.png" alt="wjwbfc" />
-        </div>
+        <ReactWhatsapp
+          number="5491159931540"
+          message="Hola Fer"
+        ></ReactWhatsapp>
       </div>
     </MainLayout>
   );

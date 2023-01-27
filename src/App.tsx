@@ -9,7 +9,7 @@ import Skills from './components/sections/skills/Skills';
 function App() {
   return (
     <div className="App">
-      <Cursor />
+      {/* <Cursor /> */}
       <main>
         <Nav />
         <Profile />
