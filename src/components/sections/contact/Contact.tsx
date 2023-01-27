@@ -34,24 +34,21 @@ const Contact = () => {
   return (
     <MainLayout idSection={'contact'}>
       <div className={styles['container-contact']}>
-        {/* <div className={styles['contact-button']}>
-          <img src="/email.png" alt="email" />
-        </div> */}
         <Button
           text={'ferpm.dev@gmail.com'}
           classNameA={styles['contact-button']}
           classNameP={styles['contact-button-classnamep']}
         >
-          <img onClick={startCopyEmail} src="/emailCopy.svg" alt="github" />
+          <img onClick={startCopyEmail} src="/email.png" alt="github" />
         </Button>
         {iscopied && <MessageHasCopied />}
         {copy && (
-          // <MessageHasCopied />
           <AlertEmail copyEmail={copyEmail} notNowCopyEmail={notNowCopyEmail} />
         )}
         <Button
           href={'https://github.com/ferpmdev'}
           classNameA={styles['contact-button']}
+          classNameP={styles['contact-button-classnamep']}
           target={'_blank'}
         >
           <img src="/github.png" alt="github" />
@@ -66,14 +63,21 @@ const Contact = () => {
         <Button
           href={'https://www.linkedin.com/in/ferpmdeveloper/'}
           classNameA={styles['contact-button']}
+          classNameP={styles['contact-button-classnamep']}
           target={'_blank'}
         >
           <img src="/linkedin.png" alt="linkedin" />
         </Button>
-        <ReactWhatsapp
-          number="5491159931540"
-          message="Hola Fer"
-        ></ReactWhatsapp>
+
+        <Button
+          classNameA={styles['contact-button']}
+          classNameP={styles['contact-button-classnamep']}
+        >
+          <ReactWhatsapp
+            number="5491159931540"
+            message="Hola Fer"
+          ></ReactWhatsapp>
+        </Button>
       </div>
     </MainLayout>
   );

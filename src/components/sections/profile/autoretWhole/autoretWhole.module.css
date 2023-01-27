@@ -2,7 +2,26 @@
   max-width: 40%;
 }
 .autoret-container-glass {
+  max-width: 55%;
   fill: rgb(0, 0, 0);
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+@keyframes grow {
+  0% {
+    fill: rgb(0, 0, 0);
+  }
+  20% {
+    fill: rgba(0, 0, 0, 0.1);
+  }
+  90% {
+    fill: rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    fill: rgb(0, 0, 0);
+  }
 }
 
 @media screen and (min-width: 980px) {
@@ -10,9 +29,7 @@
     max-width: 70%;
   }
   .autoret-container-glass {
-    animation-name: grow;
-    animation-duration: 3s;
-    animation-fill-mode: both;
+    max-width: 75%;
   }
 
   .autoret-container-glass:hover {
@@ -25,19 +42,8 @@
     animation-duration: 1s;
   }
 
-  @keyframes grow {
-    0% {
-      fill: rgb(0, 0, 0);
-    }
-    20% {
-      fill: rgba(0, 0, 0, 0.1);
-    }
-    90% {
-      fill: rgba(0, 0, 0, 0.1);
-    }
-    100% {
-      fill: rgb(0, 0, 0);
-    }
+  .autoret-react {
+    fill: #61dafb;
   }
 
   @keyframes grow2 {

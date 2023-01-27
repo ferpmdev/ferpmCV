@@ -11,9 +11,11 @@
 
 .contact-button {
   margin: 2rem 0;
+  cursor: default;
 }
 
 .contact-button img {
+  cursor: pointer;
   height: 15vw;
 }
 

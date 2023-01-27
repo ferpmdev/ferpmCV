@@ -1,7 +1,7 @@
 import { MainLayout } from '../../layouts/MainLayout';
 import styles from './profile.module.css';
 import SkillsLogos from '../skills/skillsLogos/SkillsLogos';
-import { AutoretWhole } from './autoretWhole/AutoretWhole';
+import { AutoretNew } from './autoretWhole/AutoretNew';
 
 const Profile = () => {
   return (
@@ -24,7 +24,7 @@ const Profile = () => {
         </section>
 
         <div className={styles['profile-container-svg']}>
-          <AutoretWhole />
+          <AutoretNew />
         </div>
       </div>
       <div className={styles['profile-container-svg-animation']}>
