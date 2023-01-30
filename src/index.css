@@ -20,6 +20,9 @@
   --orange: #f06418;
   --background: #e3f6f9;
   --black: #000000;
+  --js: #ffdd00;
+  --react: #61dafb;
+  --html: #ff0000;
 }
 
 html {
@@ -34,6 +37,7 @@ body {
   min-width: 280px;
   min-height: 100vh;
   background-color: var(--background);
+  overflow-x: hidden;
 }
 
 h1 {

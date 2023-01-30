@@ -1,0 +1,265 @@
+.logos-all {
+  display: none;
+}
+
+.autoret-container {
+  max-width: 40%;
+}
+.autoret-container-glass {
+  max-width: 55%;
+  fill: rgb(0, 0, 0);
+  animation-name: grow;
+  animation-duration: 8s;
+  animation-fill-mode: both;
+}
+
+@keyframes grow {
+  0% {
+    fill: rgb(0, 0, 0);
+  }
+  20% {
+    fill: rgba(0, 0, 0, 0.1);
+  }
+  90% {
+    fill: rgba(0, 0, 0, 0);
+  }
+  100% {
+    fill: rgb(0, 0, 0);
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .autoret-container {
+    max-width: 70%;
+  }
+  .autoret-container-glass {
+    max-width: 75%;
+  }
+
+  .autoret-container-glass:hover {
+    animation-name: grow2;
+    animation-duration: 6s;
+  }
+
+  .autoret-container:hover {
+    animation-name: grow;
+    animation-duration: 1s;
+  }
+
+  .autoret-react {
+    fill: #61dafb;
+  }
+
+  .autoret-scale {
+    animation: intro 2.5s 4s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    transform-origin: 70% 53%;
+  }
+
+  /********* ANIMACIONES LOGOS *************/
+
+  .logos-all {
+    position: absolute;
+    display: inherit;
+    top: 0;
+    left: 40vw;
+    right: 20vw;
+    opacity: 0;
+    transform: scale(0.3);
+    animation: intro-logos-all 5s 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  .logos-css-red,
+  .logos-css-white,
+  .logos-css-black {
+    animation: intro-css 4.5s 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    transform-origin: 0% 0%;
+  }
+
+  .logos-css-white {
+    animation-delay: 0.25s;
+    fill: rgb(241, 233, 224);
+  }
+
+  .logos-css-black {
+    fill: rgb(0, 0, 0);
+  }
+
+  .logos-html-red,
+  .logos-html-black,
+  .logos-js-yellow,
+  .logos-js-black,
+  .logos-next-white,
+  .logos-next-black {
+    animation: intro-html 2.5s 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    fill: var(--html);
+    transform-origin: 20%;
+  }
+
+  .logos-js-black {
+    fill: rgba(0, 0, 0, 0.99);
+  }
+
+  .logos-react-black,
+  .logos-react-blue,
+  .logos-sass-red {
+    animation: intro-react 4.5s 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    transform-origin: 10%;
+  }
+
+  .logos-react-blue {
+    fill: var(--react);
+  }
+
+  .logos-react-black,
+  .logos-reactnative-black {
+    fill: var(--primary);
+  }
+
+  .logos-js-yellow {
+    fill: var(--js);
+  }
+
+  .logos-html-black {
+    animation-delay: 0.15s;
+    fill: rgb(0, 0, 0);
+  }
+
+  .logos-git-red,
+  .logos-sass-red {
+    animation-delay: 0.15s;
+    fill: var(--html);
+  }
+
+  .logos-git-white {
+    animation-delay: 0.15s;
+    fill: var(--background);
+  }
+
+  .logos-tailwind-black,
+  .logos-tailwind-bluelight,
+  .logos-html-white,
+  .logos-reactnative-black,
+  .logos-reactnative-bluelight {
+    fill: var(--react);
+    animation: intro-next 2.5s 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  .logos-html-white {
+    animation-delay: 0.25s;
+    fill: var(--background);
+  }
+
+  .logos-reactnative-black {
+    fill: var(--primary);
+  }
+
+  .logos-tailwind-black {
+    fill: var(--black);
+  }
+
+  .logos-next-white {
+    fill: var(--background);
+  }
+
+  .logos-next-black {
+    fill: var(--black);
+  }
+
+  @keyframes intro-logos-all {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.2;
+    }
+    60% {
+      transform: scale(2);
+      opacity: 0.5;
+    }
+    99% {
+      transform: scale(15);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes intro-css {
+    0% {
+      opacity: 1;
+      transform: rotateY(90deg);
+    }
+    20% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+
+  @keyframes intro-html {
+    0% {
+      opacity: 1;
+      transform: rotateY(120deg);
+    }
+    60% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  @keyframes intro-next {
+    0% {
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(30rem);
+    }
+    60% {
+      transform: translateX(10rem);
+    }
+  }
+
+  @keyframes intro-sass {
+    0% {
+      opacity: 1;
+    }
+    60% {
+      transform: translateX(20rem);
+    }
+  }
+
+  @keyframes intro-react {
+    0% {
+      opacity: 1;
+      transform: rotateY(90deg);
+    }
+    60% {
+      transform: rotateX(10deg);
+    }
+  }
+
+  @keyframes grow2 {
+    0% {
+      fill: rgb(0, 0, 0);
+    }
+    50% {
+      fill: rgba(0, 0, 0, 0.1);
+    }
+    100% {
+      fill: rgb(0, 0, 0);
+    }
+  }
+}

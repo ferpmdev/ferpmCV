@@ -1,13 +1,14 @@
 import { MainLayout } from '../../layouts/MainLayout';
 import styles from './skills.module.css';
-import SkillsLogos from './skillsLogos/SkillsLogos';
+import { SkillsLogosNew } from './skillsLogosNew/SkillsLogosNew';
+// import SkillsLogosNew from './skillsLogosNew/SkillsLogosNew';
 
 const Skills = () => {
   return (
     <MainLayout idSection={'skills'}>
       <div className={styles['skills-container']}>
         <div className={styles['skills-container-svg']}>
-          <SkillsLogos />
+          <SkillsLogosNew />
         </div>
         <section className={styles['skills-container-text']}>
           <h1>Skills</h1>

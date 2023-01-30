@@ -1,11 +1,13 @@
 import { MainLayout } from '../../layouts/MainLayout';
 import styles from './profile.module.css';
 import SkillsLogos from '../skills/skillsLogos/SkillsLogos';
-import { AutoretNew } from './autoretWhole/AutoretNew';
+import { AutoretNewCurve } from './autoretNew/AutoretNewCurve';
+import { AutoretLogos } from './autoretNew/Autoretlogos';
 
 const Profile = () => {
   return (
     <MainLayout idSection={'profile'}>
+      <AutoretLogos />
       <div className={styles['profile-container']}>
         <section className={styles['profile-container-text']}>
           <h1>
@@ -24,7 +26,7 @@ const Profile = () => {
         </section>
 
         <div className={styles['profile-container-svg']}>
-          <AutoretNew />
+          <AutoretNewCurve />
         </div>
       </div>
       <div className={styles['profile-container-svg-animation']}>
