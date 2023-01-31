@@ -96,6 +96,7 @@
 @keyframes copied {
   0% {
     transform: scale(1);
+    -webkit-transform: scale(1);
     opacity: 0.7;
   }
   35% {
@@ -103,14 +104,17 @@
   }
   50% {
     transform: scale(2.5);
+    -webkit-transform: scale(2.5);
   }
   80% {
     opacity: 0.6;
   }
   85% {
+    -webkit-transform: scale(0.8);
     transform: scale(0.8);
   }
   to {
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
@@ -135,6 +139,8 @@
   font-size: 5vw;
   margin-top: 2rem;
   z-index: 4;
+  -webkit-animation-name: copied;
+  -webkit-animation-duration: 1500ms;
   animation-name: copied;
   animation-duration: 1500ms;
   pointer-events: none;

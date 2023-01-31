@@ -41,7 +41,8 @@
     animation-name: skillLogos-opacity;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    animation-delay: 11s;
+    animation-delay: 7800ms;
+    -webkit-animation-delay: 7800ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: forwards;
   }
@@ -62,11 +63,13 @@
   0% {
     opacity: 0;
     transform: translate3d(-80rem, 40rem, -120rem);
+    -webkit-transform: translate3d(-80rem, 40rem, -120rem);
   }
 
   55% {
     opacity: 0.4;
     transform: matrix(0.86, 1.9, 1.79, 0.69, -23, -1);
+    -webkit-transform: matrix(0.86, 1.9, 1.79, 0.69, -23, -1);
   }
 
   100% {

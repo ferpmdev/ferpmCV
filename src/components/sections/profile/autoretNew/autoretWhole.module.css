@@ -6,11 +6,15 @@
   max-width: 40%;
 }
 .autoret-container-glass {
-  max-width: 55%;
+  max-width: 85%;
   fill: rgb(0, 0, 0);
+  transition: all 3s;
   animation-name: grow;
-  animation-duration: 8s;
+  animation-duration: 4s;
   animation-fill-mode: both;
+  -webkit-animation-name: grow;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
 }
 
 @keyframes grow {
@@ -30,6 +34,8 @@
 
 @media screen and (min-width: 980px) {
   .autoret-container {
+    animation-duration: 8s;
+    -webkit-animation-duration: 8s;
     max-width: 70%;
   }
   .autoret-container-glass {
@@ -39,12 +45,16 @@
   .autoret-container-glass:hover {
     animation-name: grow2;
     animation-duration: 6s;
+    -webkit-animation-name: grow2;
+    -webkit-animation-duration: 6s;
   }
 
-  .autoret-container:hover {
+  /* .autoret-container:hover {
     animation-name: grow;
     animation-duration: 1s;
-  }
+    -webkit-animation-name: grow;
+    -webkit-animation-duration: 1s;
+  } */
 
   .autoret-react {
     fill: #61dafb;
@@ -55,6 +65,10 @@
     animation-timing-function: linear;
     animation-fill-mode: backwards;
     transform-origin: 70% 53%;
+    -webkit-animation: intro 2.5s 4s infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: backwards;
+    -webkit-transform-origin: 70% 53%;
   }
 
   /********* ANIMACIONES LOGOS *************/
@@ -70,6 +84,10 @@
     animation: intro-logos-all 5s 4s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+    -webkit-transform: scale(0.3);
+    -webkit-animation: intro-logos-all 5s 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
   }
 
   .logos-css-red,
@@ -79,10 +97,15 @@
     animation-timing-function: linear;
     animation-fill-mode: backwards;
     transform-origin: 0% 0%;
+    -webkit-animation: intro-css 4.5s 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: backwards;
+    -webkit-transform-origin: 0% 0%;
   }
 
   .logos-css-white {
     animation-delay: 0.25s;
+    -webkit-animation-delay: 0.25s;
     fill: rgb(241, 233, 224);
   }
 
@@ -99,8 +122,12 @@
     animation: intro-html 2.5s 4s;
     animation-timing-function: linear;
     animation-fill-mode: both;
-    fill: var(--html);
     transform-origin: 20%;
+    -webkit-animation: intro-html 2.5s 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: both;
+    -webkit-transform-origin: 20%;
+    fill: var(--html);
   }
 
   .logos-js-black {
@@ -114,6 +141,10 @@
     animation-timing-function: linear;
     animation-fill-mode: backwards;
     transform-origin: 10%;
+    -webkit-animation: intro-react 4.5s 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: backwards;
+    -webkit-transform-origin: 10%;
   }
 
   .logos-react-blue {
@@ -131,17 +162,20 @@
 
   .logos-html-black {
     animation-delay: 0.15s;
+    animation-delay: 0.15s;
     fill: rgb(0, 0, 0);
   }
 
   .logos-git-red,
   .logos-sass-red {
     animation-delay: 0.15s;
+    -webkit-animation-delay: 0.15s;
     fill: var(--html);
   }
 
   .logos-git-white {
     animation-delay: 0.15s;
+    -webkit-animation-delay: 0.15s;
     fill: var(--background);
   }
 
@@ -154,10 +188,14 @@
     animation: intro-next 2.5s 4s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+    -webkit-animation: intro-next 2.5s 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
   }
 
   .logos-html-white {
     animation-delay: 0.25s;
+    -webkit-animation-delay: 0.25s;
     fill: var(--background);
   }
 
@@ -186,10 +224,12 @@
     }
     60% {
       transform: scale(2);
+      -webkit-transform: scale(2);
       opacity: 0.5;
     }
     99% {
       transform: scale(15);
+      -webkit-transform: scale(15);
       opacity: 1;
     }
     100% {
@@ -200,12 +240,15 @@
   @keyframes intro-css {
     0% {
       opacity: 1;
+      -webkit-transform: rotateY(90deg);
       transform: rotateY(90deg);
     }
     20% {
+      -webkit-transform: rotateY(0deg);
       transform: rotateY(0deg);
     }
     100% {
+      -webkit-transform: rotateY(0deg);
       transform: rotateY(0deg);
     }
   }
@@ -214,8 +257,10 @@
     0% {
       opacity: 1;
       transform: rotateY(120deg);
+      -webkit-transform: rotateY(120deg);
     }
     60% {
+      -webkit-transform: rotateX(0deg);
       transform: rotateX(0deg);
     }
   }
@@ -225,9 +270,11 @@
       opacity: 1;
     }
     30% {
+      -webkit-transform: translateX(30rem);
       transform: translateX(30rem);
     }
     60% {
+      -webkit-transform: translateX(10rem);
       transform: translateX(10rem);
     }
   }
@@ -237,6 +284,7 @@
       opacity: 1;
     }
     60% {
+      -webkit-transform: translateX(20rem);
       transform: translateX(20rem);
     }
   }
@@ -244,9 +292,11 @@
   @keyframes intro-react {
     0% {
       opacity: 1;
+      -webkit-transform: rotateY(90deg);
       transform: rotateY(90deg);
     }
     60% {
+      -webkit-transform: rotateX(10deg);
       transform: rotateX(10deg);
     }
   }

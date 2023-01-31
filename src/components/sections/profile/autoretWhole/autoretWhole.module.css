@@ -7,6 +7,9 @@
   animation-name: grow;
   animation-duration: 3s;
   animation-fill-mode: both;
+  -webkit-animation-name: grow;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
 }
 
 @keyframes grow {
@@ -35,11 +38,15 @@
   .autoret-container-glass:hover {
     animation-name: grow2;
     animation-duration: 6s;
+    -webkit-animation-name: grow2;
+    -webkit-animation-duration: 6s;
   }
 
   .autoret-container:hover {
     animation-name: grow;
     animation-duration: 1s;
+    -webkit-animation-name: grow;
+    -webkit-animation-duration: 1s;
   }
 
   .autoret-react {
