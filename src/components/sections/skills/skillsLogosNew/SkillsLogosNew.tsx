@@ -6,6 +6,7 @@ export const SkillsLogosNew = () => {
       className={styles['logos-all']}
       viewBox="0 200 780 740"
       xmlns="http://www.w3.org/2000/svg"
+      width="600"
     >
       <g id="CSS">
         <polygon

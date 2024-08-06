@@ -58,9 +58,11 @@ const Experience = () => {
             <b>React, Next.js, Node, Javascript, CSS3, HTML5.</b>
           </p>
         </section>
-        <div className={styles['experience-container-img-all']}>
-          <img src="./all.webp" className={styles['experience-img-all']} />
-        </div>
+        <picture className={styles['experience-container-img-all']}>
+          <source srcSet="./all.webp 1x, ./all.webp 2x" type="image/webp" />
+          <source srcSet="./all.png 1x, ./all.png 2x" type="image/png" />
+          <img src="./all.png" className={styles['experience-img-all']} />
+        </picture>
       </div>
     </MainLayout>
   );

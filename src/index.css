@@ -27,17 +27,21 @@
 
 html {
   scroll-behavior: smooth;
+  margin: 0 auto;
+  display: flex;
+  place-items: center;
 }
 
 body {
-  padding: 0 0 0 0;
-  margin: 0;
   display: flex;
   place-items: center;
+  padding: 0;
+  margin: 0 auto;
   min-width: 280px;
   min-height: 100vh;
   background-color: var(--background);
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 h1 {
@@ -72,6 +76,11 @@ p {
 .hr {
   margin-top: 3rem;
   opacity: 0.8;
+}
+
+.App {
+  margin: 0 auto;
+  width: 100%;
 }
 
 @media screen and (min-width: 480px) {

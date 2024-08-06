@@ -1,4 +1,4 @@
-import styles from './autoretWhole.module.css';
+import styles from './autoretLogos.module.css';
 
 export const AutoretLogos = () => {
   return (
@@ -6,6 +6,7 @@ export const AutoretLogos = () => {
       className={styles['logos-all']}
       viewBox="0 0 816 1131.79"
       xmlns="http://www.w3.org/2000/svg"
+      width="650"
     >
       <g id="CSS">
         <polygon

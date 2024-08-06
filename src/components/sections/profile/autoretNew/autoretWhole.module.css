@@ -8,6 +8,33 @@
 .autoret-container-glass {
   max-width: 85%;
   fill: rgb(0, 0, 0);
+}
+
+.autoret-js-g {
+  animation-iteration-count: infinite;
+  animation-name: grow;
+  animation-duration: 20s;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: js-animation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+}
+
+.autoret-react {
+  animation-iteration-count: infinite;
+  animation-name: rotate-react;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  transform-origin: 67% 51.8%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-react;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-transform-origin: 67% 51.8%;
+}
+
+.autoret-face-g {
   transition: all 3s;
   animation-name: grow;
   animation-duration: 4s;
@@ -19,16 +46,20 @@
 
 @keyframes grow {
   0% {
-    fill: rgb(0, 0, 0);
+    /* fill: rgb(0, 0, 0); */
+    opacity: 0;
   }
   20% {
-    fill: rgba(0, 0, 0, 0.1);
+    opacity: 0.2;
+    /* fill: rgba(0, 0, 0, 0.1); */
   }
   90% {
-    fill: rgba(0, 0, 0, 0);
+    opacity: 0;
+    /* fill: rgba(0, 0, 0, 0); */
   }
   100% {
-    fill: rgb(0, 0, 0);
+    opacity: 1;
+    /* fill: rgb(0, 0, 0); */
   }
 }
 
@@ -42,22 +73,20 @@
     max-width: 75%;
   }
 
-  .autoret-container-glass:hover {
+  .autoret-face-g:hover {
+    transition: 1500ms;
     animation-name: grow2;
     animation-duration: 6s;
     -webkit-animation-name: grow2;
     -webkit-animation-duration: 6s;
   }
 
-  /* .autoret-container:hover {
-    animation-name: grow;
-    animation-duration: 1s;
-    -webkit-animation-name: grow;
-    -webkit-animation-duration: 1s;
-  } */
-
   .autoret-react {
-    fill: #61dafb;
+    fill: var(--react);
+  }
+
+  .autoret-js {
+    fill: var(--js);
   }
 
   .autoret-scale {
@@ -303,13 +332,34 @@
 
   @keyframes grow2 {
     0% {
-      fill: rgb(0, 0, 0);
+      opacity: 0;
     }
     50% {
-      fill: rgba(0, 0, 0, 0.1);
+      opacity: 0.2;
     }
     100% {
-      fill: rgb(0, 0, 0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes js-animation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes rotate-react {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
     }
   }
 }

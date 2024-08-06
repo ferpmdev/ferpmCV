@@ -1,0 +1,255 @@
+.logos-all {
+  display: none;
+}
+
+.logos-all {
+  position: absolute;
+  display: inherit;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(0.1);
+  transform-origin: 200% 200%;
+  /* -webkit-transform-origin: -15% 20%; */
+  animation: intro-logos-all 5s 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  -webkit-transform: scale(0.3);
+  -webkit-animation: intro-logos-all 5s 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.logos-css-white {
+  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+  fill: rgb(241, 233, 224);
+}
+
+.logos-css-black {
+  fill: rgb(0, 0, 0);
+}
+
+.logos-html-red,
+.logos-html-black,
+.logos-js-yellow,
+.logos-js-black,
+.logos-next-white,
+.logos-next-black {
+  animation: intro-html 2.5s 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  transform-origin: 20%;
+  -webkit-animation: intro-html 2.5s 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  -webkit-transform-origin: 20%;
+  fill: var(--html);
+}
+
+.logos-js-black {
+  fill: rgba(0, 0, 0, 0.99);
+}
+
+.logos-react-black,
+.logos-react-blue,
+.logos-sass-red {
+  animation: intro-react 4.5s 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  transform-origin: 10%;
+  -webkit-animation: intro-react 4.5s 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-transform-origin: 10%;
+}
+
+.logos-react-blue {
+  fill: var(--react);
+}
+
+.logos-react-black,
+.logos-reactnative-black {
+  fill: var(--primary);
+}
+
+.logos-js-yellow {
+  fill: var(--js);
+}
+
+.logos-html-black {
+  animation-delay: 0.15s;
+  animation-delay: 0.15s;
+  fill: rgb(0, 0, 0);
+}
+
+.logos-git-red,
+.logos-sass-red {
+  animation-delay: 0.15s;
+  -webkit-animation-delay: 0.15s;
+  fill: var(--html);
+}
+
+.logos-git-white {
+  animation-delay: 0.15s;
+  -webkit-animation-delay: 0.15s;
+  fill: var(--background);
+}
+
+.logos-tailwind-black,
+.logos-tailwind-bluelight,
+.logos-html-white,
+.logos-reactnative-black,
+.logos-reactnative-bluelight {
+  fill: var(--react);
+  animation: intro-next 2.5s 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  -webkit-animation: intro-next 2.5s 4s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.logos-html-white {
+  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+  fill: var(--background);
+}
+
+.logos-reactnative-black {
+  fill: var(--primary);
+}
+
+.logos-tailwind-black {
+  fill: var(--black);
+}
+
+.logos-next-white {
+  fill: var(--background);
+}
+
+.logos-next-black {
+  fill: var(--black);
+}
+
+@keyframes intro-logos-all {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.2;
+  }
+  60% {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    opacity: 0.5;
+  }
+  99% {
+    transform: scale(15);
+    -webkit-transform: scale(15);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  /********* ANIMACIONES LOGOS *************/
+
+  .logos-all {
+    position: absolute;
+    display: inherit;
+    top: 0;
+    left: 40vw;
+    right: 20vw;
+    opacity: 0;
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    transform: scale(0.3);
+    animation: intro-logos-all 5s 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-transform: scale(0.3);
+    -webkit-animation: intro-logos-all 5s 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  .logos-css-red,
+  .logos-css-white,
+  .logos-css-black {
+    animation: intro-css 4.5s 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+    transform-origin: 0% 0%;
+    -webkit-animation: intro-css 4.5s 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: backwards;
+    -webkit-transform-origin: 0% 0%;
+  }
+
+  @keyframes intro-css {
+    0% {
+      opacity: 1;
+      -webkit-transform: rotateY(90deg);
+      transform: rotateY(90deg);
+    }
+    20% {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    100% {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+  }
+
+  @keyframes intro-html {
+    0% {
+      opacity: 1;
+      transform: rotateY(120deg);
+      -webkit-transform: rotateY(120deg);
+    }
+    60% {
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg);
+    }
+  }
+
+  @keyframes intro-next {
+    0% {
+      opacity: 1;
+    }
+    30% {
+      -webkit-transform: translateX(30rem);
+      transform: translateX(30rem);
+    }
+    60% {
+      -webkit-transform: translateX(10rem);
+      transform: translateX(10rem);
+    }
+  }
+
+  @keyframes intro-sass {
+    0% {
+      opacity: 1;
+    }
+    60% {
+      -webkit-transform: translateX(20rem);
+      transform: translateX(20rem);
+    }
+  }
+
+  @keyframes intro-react {
+    0% {
+      opacity: 1;
+      -webkit-transform: rotateY(90deg);
+      transform: rotateY(90deg);
+    }
+    60% {
+      -webkit-transform: rotateX(10deg);
+      transform: rotateX(10deg);
+    }
+  }
+}
